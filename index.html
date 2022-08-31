@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 1 - JS Intermediário</title>
+
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <a href="#" class="button back opacity">
-            <img src="./assets/img/seta.png" alt="seta voltar" class="back-button">
+        <a href="#" id="button-back" class="button-back opacity">
+            <img src="./assets/img/seta.png" alt="seta voltar" class="img-button">
         </a>
 
         <div class="slide pink-slide show">
@@ -56,9 +63,11 @@
             </div>
         </div>
 
-        <a href="#" class="seta avancar">
-            <img src="./assets/img/seta.png" alt="seta avançar" class="seta-avancar">
+        <a href="#" id="button-next" class="button-next">
+            <img src="./assets/img/seta.png" alt="seta avançar" class="img-button">
         </a>
     </div>
+
+    <script src="./assets/script/script.js"></script>
 </body>
 </html>

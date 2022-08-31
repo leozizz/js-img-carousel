@@ -1,0 +1,72 @@
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.container .slide.show {
+    opacity: 1;
+}
+
+.pink-slide {
+    background: url(../img/flores-rosas.jpg);
+}
+
+.green-slide {
+    background: url(../img/flores-verdes.jpg);
+}
+
+.blue-slide {
+    background: url(../img/lago.jpg);
+}
+
+.orange-slide {
+    background: url(../img/montanhas.jpg);
+}
+
+.button-back, .button-next {
+    position: absolute;
+    z-index: 1;
+}
+
+.button-back {
+    left: 4%;
+    transform: rotate(180deg);
+}
+
+.button-next {
+    right: 4%;
+}
+
+.button-back .img-button, .button-next .img-button {
+    width: 50px;
+    height: 50px;
+}
+
+.opacity {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.content {
+    display: block;
+    background: #fff;
+    margin-left: 180px;
+    padding: 65px 60px;
+    width: 620px;
+    border-radius: 10px;
+}
