@@ -70,3 +70,36 @@
     width: 620px;
     border-radius: 10px;
 }
+
+.content .title {
+    margin-bottom: 80px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.content .text {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.content .link {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.link.pink {
+    color: #C50000;
+}
+
+.link.green {
+    color: #D9DD10;
+}
+
+.link.orange {
+    color: #A63A17;
+}
+
+.link.blue {
+    color: #10ACDD;
+}
