@@ -10,12 +10,11 @@ nextButton.addEventListener("click", function () {
         return
     }
 
-    hideImage()
 
     actualImage++
 
-    images[actualImage].classList.add("show")
-
+    hideImage()
+    showImage()
     showOrHideButtons()
 })
 
@@ -25,14 +24,16 @@ backButton.addEventListener("click", function () {
         return
     }
 
-    hideImage()
-    
     actualImage--
 
-    images[actualImage].classList.add("show")
-
+    hideImage()
+    showImage()
     showOrHideButtons()
 })
+
+function showImage() {
+    images[actualImage].classList.add("show")
+}
 
 function hideImage() {
     const openedImage = document.querySelector(".show")
